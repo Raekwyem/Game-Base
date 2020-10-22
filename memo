@@ -1,0 +1,8 @@
+            Serialisation   | Désérialisation
+JS      |   JSON.stringify  | JSON.parse
+PHP     |   json_encode     | json_decode
+
+SQL:
+
+One To Many - 1/N
+Many To Many - N/N

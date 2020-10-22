@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Base</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<bod>
+    <header class="text-center sticky-top shadow-lg">
+        <a href="../index.html"><h1>Game Base</h1></a>
+    </header>
+    <main>
+        <div class="d-flex justify-content-center">
+            <div class="card mb-3 carte border-warning" style="max-width: 50%">
+                <div>
+                    <img id="UrlPochette" src="" class="card-img-top jaquette" alt="">
+                </div>
+                <div class="card-header border-warning bg-transparent">
+                    <h5 class="card-title text-center" id="Nom"></h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text" id="Note"></p>
+                    <p class="card-text" id="DateSortie"></p>
+                    <p class="card-text" id="Genre"></p>
+                    <p class="card-text" id="Editeur"></p>
+                    <p class="card-text" id="Description"></p>
+                    <p class="card-text text-right" id="Prix"></p>
+                </div>
+                <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#avis" aria-expanded="false" aria-controls="collapseExample">
+                    Voir les commentaires
+                </button>
+                <div class="card-footer border-warning collapse" id="avis">
+                </div>
+                <h5 class="text-center m-3">Écrire un commentaire</h5>
+                <div class="form-group">
+                    <input type="text" class="form-control border-warning" name="pseudo" id="pseudo" placeholder="Pseudo...">
+                </div>
+                <div class="form-group">
+                    <textarea name="commentaire" class="form-control  border-warning" id="commentaire" cols="30" rows="10" placeholder="Votre commentaire..."></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="button" class="form-control btn btn-warning" id="valider">Valider
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/game.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
